@@ -4,7 +4,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const exercice3 = document.querySelector("#exercice-3");
 
   if (exercice1) {
-    // Ecrire ici tout le code pour l'exercice 1: Sélecteurs JavaScript
+    document.querySelector(".broccoli");
+    document.querySelector(".healthy-food");
+    document.querySelector('[data-vegetable="broccoli"]');
+    document.querySelector(".raw-food");
+    document.querySelector(".steamed");
+
+    document.querySelector(".broccoli").remove();
+    document.querySelector(".healthy-food").remove();
+    document.querySelector('[data-vegetable="broccoli"]').remove();
+    document.querySelector(".raw-food").remove();
+    document.querySelector(".steamed").remove();
   }
 
   if (exercice2) {
