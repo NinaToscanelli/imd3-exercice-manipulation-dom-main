@@ -18,10 +18,52 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   if (exercice2) {
-    // Ecrire ici tout le code pour l'exercice 2: Modification des classes
+    document.querySelector("#pizza-to-cook").classList.add("cooked");
+    document.querySelector(".pizza.hot").classList.remove("burned");
+    document.querySelector("#pizza-special").classList.add("highlighted");
+    document.querySelector(".pizza.basic").classList.add("premium", "deluxe");
+    document.querySelector(".pizza.cold").classList.remove("cold");
+    document.querySelector(".pizza.cold").classList.add("hot");
   }
 
   if (exercice3) {
-    // Ecrire ici tout le code pour l'exercice 3: Ecouteurs d'événement
+    const exercice31 = document.querySelector("#exercice-3-1");
+    exercice31.addEventListener("click", function () {
+      exercice31.classList.add("highlight");
+    });
+
+    const exercice32 = document.querySelector("#exercice-3-2");
+    const exercice32button = document.querySelector("#exercice-3-2 button");
+    exercice32button.addEventListener("click", function () {
+      exercice32.classList.toggle("highlight");
+    });
+
+    const exercice33 = document.querySelector("#exercice-3-3");
+    exercice33.addEventListener("mouseenter", function () {
+      exercice33.classList.add("highlight");
+    });
+    exercice33.addEventListener("mouseleave", function () {
+      exercice33.classList.remove("highlight");
+    });
+
+    const exercice34 = document.querySelector("#exercice-3-4");
+    document.addEventListener("mousemove", function () {
+      exercice34.classList.add("highlight");
+    });
+
+    const exercice35 = document.querySelector("#exercice-3-5");
+    document.addEventListener("scroll", function () {
+      exercice35.classList.add("highlight");
+    });
+
+    const exercice36 = document.querySelector("#exercice-3-6");
+    document.addEventListener("keydown", function () {
+      exercice36.classList.add("highlight");
+    });
+
+    const exercice37 = document.querySelector("#exercice-3-7");
+    window.addEventListener("resize", function () {
+      exercice37.classList.add("highlight");
+    });
   }
 });
